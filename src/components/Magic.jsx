@@ -17,7 +17,7 @@ const Magic = () => {
 
       </div>
       <div className='magicImg'>
-        <img src={wand} alt="Magic Wand"/>
+        <img src={wand} alt="Magic Wand" className="wand-animation"/>
       </div>
     </div>
     </div>

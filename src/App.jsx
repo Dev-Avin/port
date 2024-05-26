@@ -1,4 +1,3 @@
-import './App.css'
 import Hero from './components/Hero'
 import Magic from './components/Magic'
 import Features from './components/Features'

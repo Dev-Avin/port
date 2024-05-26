@@ -20,33 +20,6 @@ height: 100vh;
 .adj{
   width : 80%
 }
-
-.header{
-  height: 18vh;
-  display: flex;
-  color: white;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0  4%;
-}
-.headerButton{
-  background: white;
-  /* background-image: linear-gradient(90deg, #F87516 0%, #5E11FF 100%); */
-  border: 2px solid white;
-  padding: 5px 10px;
-  color: black;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: medium;
-  width: 188px;
-  height: 54px;
-  pointer-events: all;
-  border-radius: 5px;
-}
-.headerButton:hover{
-  background-color: transparent;
-  color: white;
-}
 .gradientText{
   background-image: linear-gradient(90deg, #F87516 0%, #5E11FF 100%);
   -webkit-background-clip: text;
@@ -198,119 +171,6 @@ height: 100vh;
   margin-top: 20px;
   transition: 0.3s; 
 }
-.application{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  color: white;
-  padding: 0 4%;
-  margin-top: 100px;
-}
-.applicationText{
-  flex: 1;
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  font-weight: 400;
-  text-align: center;
-  width: 60%;
-} 
-.applicationSub{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-  margin-top: 30px;
-   flex-wrap:wrap;
-  /* padding: 0 4%; */
-}
-.container{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-between;
-  color: white;
-  text-align: left;
-  border-style: solid;
-  border-width: 2px 2px 2px 2px;
-  border-color: #FFFFFF10;
-  transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 30px;
-  background-image: linear-gradient(180deg, #0D061F 0%, #251E35 100%);
-}
-.applicationContainer{
- width : 46%;
- opacity: 0;
- transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-.sectionHeading{
-  font-size: 1.5rem;
-  font-weight: 400;
-  width: 80%;
-  margin-top: 20px;
-  font-family: "Outfit";
-}
-.sectionSub{
-  font-size: 1rem;
-  font-weight: 200;
-  width: 80%;
-  color: rgb(255, 255, 255);
-  text-align: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: "Outfit";
-}
-.sectionImg{
-  width: 100%;
-}
-.moveUp {
-  opacity: 1;
-  transform: translateY(30px);
-}
-
-.moveDown {
-  opacity: 1;
-  transform: translateY(-30px);
-}
-.support{
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 650px;
-  padding: 40px;
-  color: white;
-  height: 35vh;
-  text-align: center;
-  align-self: center;
-  padding: 0 4%;
-}
-.supportHeading{
-  font-size: 1.5rem;
-  font-weight: 400;
-  width: 80%;
-  text-align: center;
-}
-.supportSub{
-  font-size: 1rem;
-  font-weight: 200;
-  width: 80%;
-  color: #EEE5FFBD;
-  text-align: center;
-  margin-top: 20px;
-}
-.supportImg{
-  /* display: inline-flex; */
-  width: 90%;
-}
 .features{
  color: white;
  display: flex;
@@ -383,28 +243,7 @@ height: 100vh;
   font-size: 1rem;
   color: #eee5ffbd;
 }
-.footer{
-  background-image: linear-gradient(90deg, #F87516 0%, #5E11FF 100%);
-  width: 100vw;
-  height: 80%;
-  color: white;
-  font-size: 0.9rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  pointer-events: all;
-}
-.footerLinks{
-  display: flex;
-  width: 200px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10px;
-  margin-right: 20px;
-}
+
 .link{
   color: white;
   text-decoration: none;
@@ -532,18 +371,22 @@ height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
     height: max-content;
+    padding: 20px 0 ;
   }
   .heroSide{
+    display: none;
     height: 200px;
     width: 100%;
   }
   .heroMain{
+      margin-top: 30px;
       text-align: center;
   }
   .heroMainText{
     margin-top: 30px;
     font-size: 2.3rem;
     width: 95%;
+    margin-bottom: 10px;
   }
   .heroMainSub{
     margin-top: 10px;
@@ -551,6 +394,7 @@ height: 100vh;
     width: 95%;
     color: #ffffff;
     text-align: center;
+    margin-bottom: 40px;
   }
   /* .achievementsCont{
     flex-direction: column;
@@ -609,5 +453,20 @@ height: 100vh;
   }
   .align{
     text-align: center;
+  }
+}
+
+
+.wand-animation {
+  width: 150px; /* Adjust the size as needed */
+  animation: popup 3s ease-in-out infinite;
+}
+
+@keyframes popup {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
   }
 }
