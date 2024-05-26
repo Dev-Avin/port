@@ -21,7 +21,7 @@ function App() {
       <Features />
       <footer className='footer'>
         <div className='align'>
-          © 2024 Copywrite. All rights reserved by QodeMatrix.
+          © 2024 Copywrite. All rights reserved.
         </div>
         <div className='footerLinks'>
           <a className='mailto' href="mailto:avinash.dev.sharmaji@gmail.com">Email ME</a>
