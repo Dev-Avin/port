@@ -2,7 +2,8 @@ import './App.css'
 import Hero from './components/Hero'
 import Magic from './components/Magic'
 import Features from './components/Features'
-
+import Skills from './components/Skills'
+import ContactUs from './components/Contact'
 function App() {
 
   const copyPhoneNumber = () => {
@@ -18,17 +19,10 @@ function App() {
     <div>
       <Hero />
       <Magic />
+      <Skills/>
       <Features />
-      <footer className='footer'>
-        <div className='align'>
-          © 2024 Copywrite. All rights reserved by QodeMatrix.
-        </div>
-        <div className='footerLinks'>
-          <a className='mailto' href="mailto:avinash.dev.sharmaji@gmail.com">Email ME</a>
-          <a className='contact' href="#" onClick={copyPhoneNumber}>Contact me</a>
-        </div>
-      </footer>
-    </div>
+      <ContactUs/>
+     </div>
   )
 }
 

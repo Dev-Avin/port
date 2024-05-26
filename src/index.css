@@ -413,6 +413,99 @@ height: 100vh;
 .link:hover{
   text-decoration: underline;
 }
+.contact-container {
+  text-align: center;
+  padding: 50px 20px;
+ }
+
+.contact-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #555;
+  pointer-events: all;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #0073e6;
+}
+
+.icon.github:hover {
+  color: #333;
+}
+
+.icon.whatsapp:hover {
+  color: #25d366;
+}
+
+.icon.linkedin:hover {
+  color: #0077b5;
+}
+
+.icon.twitter:hover {
+  color: #1da1f2;
+}
+
+.icon.email:hover {
+  color: #ea4335;
+}
+.skills-container {
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-heading {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: all;
+  transform: translateY(20px);
+}
+
+.skill-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  color: #0073e6;
+}
+
+.skill-name {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
 
 @media screen and (max-width: 800px) {
   .adj{
