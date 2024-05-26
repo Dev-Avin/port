@@ -463,6 +463,9 @@ height: 100vh;
   .align{
     text-align: center;
   }
+  .skills-grid {
+    gap: 0px;
+  }
 }
 
 
