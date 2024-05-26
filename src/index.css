@@ -466,6 +466,9 @@ height: 100vh;
   .skills-grid {
     gap: 0px;
   }
+  .skill-card{
+    width: 160px;
+  }
 }
 
 
