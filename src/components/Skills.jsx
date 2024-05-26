@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGit, FaGithub } from 'react-icons/fa';
 import { SiNextdotjs, SiGreensock, SiFramer, SiExpress, SiMongodb } from 'react-icons/si';
-
 
 const skills = [
   { icon: <FaHtml5 />, name: 'HTML' },
@@ -19,7 +18,26 @@ const skills = [
 ];
 
 const Skills = () => {
- 
+  const skillRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, { threshold: 0.5 });
+
+    skillRefs.current.forEach(ref => observer.observe(ref));
+
+    return () => {
+      skillRefs.current.forEach(ref => observer.unobserve(ref));
+    };
+  }, []);
+
   return (
     <div className="skills-container">
       <h1 className="skills-heading">My Skills</h1>
@@ -27,8 +45,9 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className={`skill-card visible `}
-            >
+            ref={(el) => skillRefs.current[index] = el}
+            className="skill-card"
+          >
             <div className="skill-icon">{skill.icon}</div>
             <div className="skill-name">{skill.name}</div>
           </div>
