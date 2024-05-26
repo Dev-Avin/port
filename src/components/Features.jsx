@@ -48,7 +48,7 @@ const Features = () => {
           <img src={lightning} alt="Lightning"/>
           <div className='featureText'>
             <div className='featureHeading'>Light Weight</div>
-            <div className='featureSub'>Motion Art for Elementor is designed to be lightweight.</div>
+            <div className='featureSub'>Blazing fast light weight websites with quick loading</div>
           </div>
         </div>
         <div className='featureItem container'>
