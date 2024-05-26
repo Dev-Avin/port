@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGit, FaGithub } from 'react-icons/fa';
 import { SiNextdotjs, SiGreensock, SiFramer, SiExpress, SiMongodb } from 'react-icons/si';
 
@@ -19,37 +19,7 @@ const skills = [
 ];
 
 const Skills = () => {
-  const [visibleSkills, setVisibleSkills] = useState(new Array(skills.length).fill(false));
-  const skillRefs = useRef([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry, index) => {
-          if (entry.isIntersecting) {
-            setVisibleSkills((prev) => {
-              const newVisibleSkills = [...prev];
-              newVisibleSkills[index] = true;
-              return newVisibleSkills;
-            });
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-      }
-    );
-
-    skillRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
+ 
   return (
     <div className="skills-container">
       <h1 className="skills-heading">My Skills</h1>
@@ -57,9 +27,8 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className={`skill-card ${visibleSkills[index] ? 'visible' : ''}`}
-            ref={(el) => (skillRefs.current[index] = el)}
-          >
+            className={`skill-card visible `}
+            >
             <div className="skill-icon">{skill.icon}</div>
             <div className="skill-name">{skill.name}</div>
           </div>
