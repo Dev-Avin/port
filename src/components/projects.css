@@ -1,0 +1,285 @@
+/* Base Styles */
+.projects-container {
+  background-color: black;
+  position: relative;
+  height: 300vh;
+}
+.projects-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+    253.12deg,
+    rgba(217, 217, 217, 0.5) 0%,
+    rgba(115, 115, 115, 0) 100%
+  );
+  z-index: 1;
+}
+.projects {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* height: 100vh; */
+  padding: 3.125rem 0;
+  max-width: 90rem;
+  margin: auto;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+}
+
+.projects-description-container {
+  width: 90%;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-name-container {
+  width: fit-content;
+}
+
+.project-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 71px;
+  color: #fff;
+}
+
+.project-name-hr {
+  width: 80%;
+  height: 6px;
+  background-color: #fff;
+}
+
+.projects-description {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  color: #fff;
+}
+
+.projects-display-container-pc {
+  width: 100%;
+  max-width: 55.75rem;
+  height: 100%;
+  margin-left: auto;
+  padding-top: 3.438rem;
+  position: relative;
+}
+
+.projects-display-container {
+  display: none;
+  position: relative;
+}
+.warp {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.display-laptop {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.display-laptop-frame {
+  width: auto;
+  height: 100%;
+  max-height: 28.313rem;
+  position: relative;
+  z-index: 2;
+}
+.display-laptop-content {
+  position: absolute;
+  aspect-ratio: 1.62;
+  width: 64%;
+  left: 18%;
+  top: 6%;
+  z-index: 1;
+}
+.display-android {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 33%;
+}
+.display-android-content {
+  position: absolute;
+  width: 40%;
+  aspect-ratio: 0.455;
+  left: 23.4%;
+
+  bottom: 6%;
+  z-index: 2;
+  border-radius: 10px;
+}
+.display-android-frame {
+  width: auto;
+  height: auto;
+  max-width: 16.125rem;
+  position: relative;
+  z-index: 3;
+}
+
+/* Medium Screens (1440px and below) */
+@media screen and (max-width: 1440px) {
+  .projects {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects-description {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+/* Tablet Screens (1024px and below) */
+@media screen and (max-width: 1024px) {
+  .project-name-container {
+    padding: 0 4rem;
+  }
+  .projects-description-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .project-name {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .project-name-hr {
+    height: 5px;
+  }
+  .projects-description {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0 2rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .projects-display-container-pc {
+    display: none;
+  }
+  .projects-display-container {
+    display: block;
+    width: 100%;
+  }
+  .display-laptop {
+    max-width: 100%;
+    height: 100%;
+  }
+  .display-laptop-frame,
+  .display-android-frame {
+    width: 100%;
+    height: 100%;
+  }
+  .display-android-content {
+    width: 46%;
+    aspect-ratio: 0.46;
+    left: 26.5%;
+    bottom: 7%;
+    z-index: 2;
+    border-radius: 5px;
+  }
+}
+
+/* Small Tablet Screens (786px and below) */
+@media screen and (max-width: 786px) {
+  .project-name-container {
+    padding: 0 3rem;
+  }
+  .project-name {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .project-name-hr {
+    height: 5px;
+  }
+  .projects-description {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .display-laptop-frame {
+    width: 100%;
+  }
+}
+
+/* Small Screens (500px and below) */
+@media screen and (max-width: 500px) {
+  .project-name-container {
+    padding: 0 2rem;
+  }
+  .project-name {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .project-name-hr {
+    height: 3px;
+  }
+  .projects-description {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .display-android-content {
+    width: 46%;
+    aspect-ratio: 0.46;
+    left: 26.5%;
+    bottom: 8%;
+    z-index: 2;
+    border-radius: 5px;
+  }
+}
+
+/* Extra Small Screens (400px and below) */
+@media screen and (max-width: 400px) {
+  .project-name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .display-android-content {
+    width: 46%;
+    aspect-ratio: 0.46;
+    left: 26.5%;
+    bottom: 9%;
+    z-index: 2;
+    border-radius: 2px;
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* Apply animation classes */
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease forwards;
+}
