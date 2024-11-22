@@ -22,12 +22,14 @@ const projectsArray = [
     description: `Fast and responsive website, accommodating over 1000 visits and counting, with swift loading times, seamless navigation, and user-centric design, resulting in an impressive 97% user retention rate.`,
     laptopContent: Exe,
     androidContent: ExeAndroid,
+    link: "https://teamexenith.tech/",
   },
   {
-    name: "Anonymous Confessions Site",
-    description: `Developed using React and Firebase, the site provides a platform for users to express themselves freely and anonymously. Utilizing React for efficient state management while Firebase is used for real-time data storage and retrieval.`,
+    name: "Anon Confessions",
+    description: `Developed using React and Firebase, It's a platform for users to express themselves freely and anonymously. Utilizing React for frontend while Firebase is used for real-time data storage and retrieval.`,
     laptopContent: Confessions,
     androidContent: ConfessionsAndroid,
+    link: "https://confessionexe.web.app/",
   },
 ];
 
@@ -72,9 +74,17 @@ const Projects = () => {
                 exit={{ opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.5 }}
               >
-                {projectsArray[currentProject].name}
+                <a
+                  href={projectsArray[currentProject].link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  {projectsArray[currentProject].name}
+                </a>
               </motion.h1>
             </AnimatePresence>
+
             <hr className="project-name-hr" />
           </div>
           <div className="projects-display-container">
