@@ -1,0 +1,19 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="idleCoreModern" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18 18) rotate(90) scale(10)">
+      <stop stop-color="#EAF6FF" stop-opacity="0.9" />
+      <stop offset="1" stop-color="#B4CBFF" stop-opacity="0.26" />
+    </radialGradient>
+    <linearGradient id="idleRingModern" x1="6" y1="6" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#74E0FF" />
+      <stop offset="1" stop-color="#8A7DFF" />
+    </linearGradient>
+  </defs>
+  <circle cx="18" cy="18" r="15.2" fill="#020611" fill-opacity="0.92" />
+  <circle cx="18" cy="18" r="13.7" stroke="#A5CAFF" stroke-opacity="0.32" stroke-width="1.15" />
+  <circle cx="18" cy="18" r="11.8" stroke="url(#idleRingModern)" stroke-opacity="0.86" stroke-width="1.8" />
+  <circle cx="18" cy="18" r="9.3" stroke="#BDD7FF" stroke-opacity="0.44" stroke-width="1.05" stroke-dasharray="2.6 2.6" />
+  <path d="M18 5.2V8.3M18 27.7V30.8M5.2 18H8.3M27.7 18H30.8" stroke="#8AB5FF" stroke-opacity="0.42" stroke-width="1.2" stroke-linecap="round" />
+  <rect x="13.4" y="13.4" width="9.2" height="9.2" rx="2.1" fill="url(#idleCoreModern)" />
+  <circle cx="18" cy="18" r="2.35" fill="#F7FCFF" fill-opacity="0.93" />
+</svg>

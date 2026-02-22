@@ -1,0 +1,13 @@
+<svg width="620" height="620" viewBox="0 0 620 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="620" height="620" rx="140" fill="url(#paint0_linear_1_2)"/>
+  <circle cx="310" cy="310" r="188" stroke="white" stroke-width="18" stroke-opacity="0.9"/>
+  <text x="310" y="326" text-anchor="middle" fill="white" font-family="Sora, Arial, sans-serif" font-size="108" font-weight="700" letter-spacing="6">
+    DELL
+  </text>
+  <defs>
+    <linearGradient id="paint0_linear_1_2" x1="62" y1="78" x2="550" y2="546" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A9BFF"/>
+      <stop offset="1" stop-color="#1269C4"/>
+    </linearGradient>
+  </defs>
+</svg>

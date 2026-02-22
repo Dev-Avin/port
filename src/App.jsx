@@ -4,6 +4,7 @@ import Features from "./components/Features";
 import Skills from "./components/Skills";
 import ContactUs from "./components/Contact";
 import Projects from "./components/Projects";
+import InternshipExperience from "./components/InternshipExperience";
 function App() {
   const copyPhoneNumber = () => {
     const phoneNumber = "7876222974";
@@ -23,6 +24,7 @@ function App() {
       <Magic />
       <Skills />
       <Projects />
+      <InternshipExperience />
       <Features />
       <ContactUs />
     </div>
