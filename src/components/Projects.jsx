@@ -21,7 +21,7 @@ const projectsArray = [
       "Designed and built a responsive site that handles heavy traffic with optimized assets, clear content flow, and consistently fast load times on both mobile and desktop.",
     laptopContent: Exe,
     androidContent: ExeAndroid,
-    link: "https://teamexenith.tech/",
+    link: "https://team-exe-nith.vercel.app",
     tags: ["React", "Responsive", "Performance"],
   },
   {

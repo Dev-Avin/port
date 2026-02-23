@@ -1,0 +1,110 @@
+/* ===== Contact Modern ===== */
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  pointer-events: all;
+}
+
+.contact-card {
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 30px;
+  padding: 50px 40px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(94, 17, 255, 0.25);
+}
+
+.contact-title {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.contact-sub {
+  color: #eee5ffbd;
+  font-size: 0.95rem;
+  margin-bottom: 35px;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+/* Icon style */
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow hover */
+.contact-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, #f87516, #5e11ff);
+  opacity: 0;
+  transition: 0.35s;
+  z-index: 0;
+}
+
+.contact-icon:hover::before {
+  opacity: 1;
+}
+
+.contact-icon svg {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-icon:hover {
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: 0 10px 30px rgba(94, 17, 255, 0.4);
+}
+
+/* Brand tint accents */
+.contact-icon.github:hover { color: #fff; }
+.contact-icon.whatsapp:hover { color: #25d366; }
+.contact-icon.linkedin:hover { color: #0077b5; }
+.contact-icon.twitter:hover { color: #1da1f2; }
+.contact-icon.email:hover { color: #ea4335; }
+
+/* Mobile */
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 40px 20px;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 1.4rem;
+  }
+}
