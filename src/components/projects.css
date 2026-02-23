@@ -3,6 +3,7 @@
   position: relative;
   min-height: 250vh;
   background: #000;
+
 }
 
 .projects-bg {
@@ -19,8 +20,10 @@
   position: sticky;
   top: 0;
   z-index: 2;
+    max-width: 100rem;
+  margin: auto;
   width: 100%;
-  margin: 0 auto;
+  margin:  auto;
   padding: 4rem 2rem;
   display: grid;
   grid-template-columns: minmax(17rem, 32rem) minmax(28rem, 1fr);
@@ -267,7 +270,7 @@
   }
 
   .projects-showcase {
-    display: none;
+  display: none;
   }
 
   .display-laptop {
