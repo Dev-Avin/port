@@ -1,20 +1,20 @@
-<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="dotActiveOuter" x1="4" y1="4" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+    <radialGradient id="activeCoreModern" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18 18) rotate(90) scale(11)">
+      <stop stop-color="#FFFFFF" stop-opacity="1" />
+      <stop offset="1" stop-color="#BDE2FF" stop-opacity="0.34" />
+    </radialGradient>
+    <linearGradient id="activeRingModern" x1="5.5" y1="5.5" x2="30.5" y2="30.5" gradientUnits="userSpaceOnUse">
       <stop stop-color="#57EAFF" />
-      <stop offset="0.5" stop-color="#7A95FF" />
-      <stop offset="1" stop-color="#BA64FF" />
-    </linearGradient>
-    <linearGradient id="dotActiveCore" x1="9.5" y1="8.9" x2="18.7" y2="19.2" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F1FDFF" />
-      <stop offset="1" stop-color="#D8ECFF" stop-opacity="0.96" />
+      <stop offset="0.42" stop-color="#6D90FF" />
+      <stop offset="1" stop-color="#CB5DFF" />
     </linearGradient>
   </defs>
-  <circle cx="14" cy="14" r="12.4" fill="#01040D" fill-opacity="0.94" />
-  <circle cx="14" cy="14" r="11.2" stroke="#C5E6FF" stroke-opacity="0.56" stroke-width="1.1" />
-  <circle cx="14" cy="14" r="9.6" stroke="url(#dotActiveOuter)" stroke-width="1.8" />
-  <circle cx="14" cy="14" r="7.2" stroke="#B7CEFF" stroke-opacity="0.6" stroke-width="1" stroke-dasharray="2.1 2.1" />
-  <path d="M14 3.2V6.1M14 21.9V24.8M3.2 14H6.1M21.9 14H24.8" stroke="#D4EDFF" stroke-opacity="0.62" stroke-width="1.1" stroke-linecap="round" />
-  <path d="M14 8.6L19.4 14L14 19.4L8.6 14L14 8.6Z" fill="url(#dotActiveCore)" />
-  <circle cx="14" cy="14" r="2.2" fill="#FFFFFF" />
+  <circle cx="18" cy="18" r="15.5" fill="#01050F" fill-opacity="0.95" />
+  <circle cx="18" cy="18" r="14.1" stroke="#D8F1FF" stroke-opacity="0.5" stroke-width="1.2" />
+  <circle cx="18" cy="18" r="12.3" stroke="url(#activeRingModern)" stroke-width="2.1" />
+  <circle cx="18" cy="18" r="9.5" stroke="#C1D7FF" stroke-opacity="0.58" stroke-width="1.1" stroke-dasharray="2.5 2.5" />
+  <path d="M18 4.4V8.1M18 27.9V31.6M4.4 18H8.1M27.9 18H31.6" stroke="#D8F2FF" stroke-opacity="0.72" stroke-width="1.2" stroke-linecap="round" />
+  <path d="M18 11L25 18L18 25L11 18L18 11Z" fill="url(#activeCoreModern)" />
+  <circle cx="18" cy="18" r="2.8" fill="#FFFFFF" />
 </svg>

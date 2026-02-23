@@ -1,10 +1,8 @@
-import Hero from "./components/Hero";
-import Magic from "./components/Magic";
 import Features from "./components/Features";
-import Skills from "./components/Skills";
 import ContactUs from "./components/Contact";
 import Projects from "./components/Projects";
 import InternshipExperience from "./components/InternshipExperience";
+import HeroSkillsWrapper from "./components/HeroSkillsWrapper";
 function App() {
   const copyPhoneNumber = () => {
     const phoneNumber = "7876222974";
@@ -20,9 +18,7 @@ function App() {
 
   return (
     <div>
-      <Hero />
-      <Magic />
-      <Skills />
+      <HeroSkillsWrapper />
       <Projects />
       <InternshipExperience />
       <Features />
