@@ -267,8 +267,7 @@
   }
 
   .projects-showcase {
-    min-height: 16rem;
-    overflow-x: hidden;
+    display: none;
   }
 
   .display-laptop {

@@ -701,6 +701,7 @@
 
   .internship-main {
     width: min(100%, 66rem);
+    overflow: hidden;
   }
 
   .internship-main-header {
@@ -715,8 +716,13 @@
   }
 
   .internship-card-deck {
-    min-height: 35.2rem;
+    height: 45rem;
     width: min(100%, 56rem);
+  }
+  .internship-active-card{
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -744,6 +750,8 @@
   .internship-card-deck{
     overflow-x: hidden;
     overflow-y: auto;
+    width: 100%;
+    height: 39rem;
   }
 }
 
@@ -777,11 +785,6 @@
     font-size: 0.62rem;
     letter-spacing: 0.06em;
     padding: 0.14rem 0.34rem;
-  }
-
-  .internship-card-deck {
-    width: 100%;
-    min-height: 43rem;
   }
 
   .internship-active-card,
