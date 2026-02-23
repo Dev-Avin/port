@@ -40,16 +40,36 @@ const Hero = () => {
             I design and ship user-centric products that scale.
           </p>
 
-          <div className="hero-redesign-actions">
+          <div className="hero-redesign-actions" style={{ pointerEvents: "all" }}>
             <a
               className="hero-redesign-btn hero-redesign-btn-primary"
               href="#projects"
+              style={{ pointerEvents: "all" }}
+              onClick={(e) => {
+                e.preventDefault();
+                const el = document.querySelector('#projects') || document.querySelector('.projects');
+                if (el && 'scrollIntoView' in el) {
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                } else {
+                  window.location.hash = 'projects';
+                }
+              }}
             >
               View Projects
             </a>
             <a
               className="hero-redesign-btn hero-redesign-btn-secondary"
-              href="#experience"
+              href="#internship-experience"
+              style={{ pointerEvents: "all" }}
+              onClick={(e) => {
+                e.preventDefault();
+                const el = document.querySelector('#internship-experience');
+                if (el && 'scrollIntoView' in el) {
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                } else {
+                  window.location.hash = 'internship-experience';
+                }
+              }}
             >
               Experience
             </a>

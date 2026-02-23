@@ -63,7 +63,18 @@ const Projects = () => {
   return (
     <div ref={ref} className="projects-container">
       <div className="projects-bg" />
+
       <section className="projects">
+        {/* Headline for the section */}
+        <motion.h1
+          className="projects-headline"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          My Projects
+        </motion.h1>
+
         <div className="projects-panel">
           <p className="projects-eyebrow">Featured Work</p>
 

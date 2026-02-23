@@ -48,13 +48,20 @@ export default function Features() {
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
+          const el = e.target;
           if (e.isIntersecting) {
-            e.target.classList.add("inview");
-            io.unobserve(e.target);
+            // Re-trigger animation on each enter
+            el.classList.remove("inview");
+            // Force reflow to restart CSS animation timeline
+            void el.offsetWidth;
+            el.classList.add("inview");
+          } else {
+            // Reset state when leaving viewport
+            el.classList.remove("inview");
           }
         });
       },
-      { threshold: 0.18 }
+      { threshold: 0.4 }
     );
 
     cards.forEach((card) => {

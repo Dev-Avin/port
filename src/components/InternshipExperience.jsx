@@ -18,10 +18,10 @@ const experienceItems = [
     summary:
       "Built and shipped responsive product interfaces at Heliverse, improving performance, maintainability, and delivery speed across client-facing web applications.",
     points: [
-      "Developed reusable UI architecture with React.js and Next.js for pages, dashboards, and content-driven modules.",
-      "Implemented SSR strategies and route-level rendering improvements that reduced page load time by about 50%.",
-      "Strengthened stability through debugging, manual validation, and review-driven code quality improvements.",
-      "Collaborated with design and product stakeholders to ensure consistent behavior across desktop and mobile experiences.",
+      "Developed reusable UI architecture with React.js and Next.js for product pages, dashboards, and content modules.",
+      "Implemented SSR and route-level rendering optimizations that reduced page load time by ~50%.",
+      "Improved frontend stability through debugging, validation, and review-driven code quality enhancements.",
+      "Collaborated with design and product stakeholders to ensure consistent cross-device behavior.",
     ],
     logo: HeliverseLogo,
     stack: ["React.js", "Next.js", "SSR", "Frontend"],
@@ -41,15 +41,15 @@ const experienceItems = [
     duration: "May 2025 - Jul 2025",
     location: "Internship",
     summary:
-      "Modernized CI/CD workflows for Dell ISG, improving deployment consistency, release quality, and engineering throughput across delivery teams.",
+      "Designed and delivered an internal PPDM integration metrics dashboard at Dell ISG, enabling visibility into system health and release performance across integration workflows.",
     points: [
-      "Designed and maintained scalable build, test, and deployment pipelines for repeated high-confidence releases.",
-      "Automated end-to-end delivery workflows using GitHub Actions and Jenkins to reduce manual deployment overhead.",
-      "Integrated unit and integration test gates into release pipelines for earlier regression detection.",
-      "Partnered with development and QA to standardize deployment, verification, and rollback readiness practices.",
+      "Built an end-to-end internal metrics dashboard for PPDM integration using modern web stack and CI data sources.",
+      "Integrated pipeline and test metrics to track build health, failures, and release readiness signals.",
+      "Collaborated with ISG engineers to define key operational metrics and visualization requirements.",
+      "Improved observability for integration workflows, supporting faster issue detection and debugging.",
     ],
     logo: DellLogo,
-    stack: ["GitHub Actions", "Jenkins", "Automation", "Release Quality"],
+    stack: ["Dashboard", "Metrics", "CI/CD", "PPDM"],
     theme: {
       accentA: "#2A9BFF",
       accentB: "#1269C4",
@@ -66,15 +66,15 @@ const experienceItems = [
     duration: "Jan 2026 - Present",
     location: "Ongoing",
     summary:
-      "Currently driving CI/CD reliability improvements for Dell ISG with deeper automation coverage, stronger release validation, and tighter team coordination.",
+      "Driving testing automation and CI reliability improvements for Dell ISG, expanding automated validation coverage and strengthening release quality across active delivery pipelines.",
     points: [
-      "Maintain and improve scalable release pipelines to support dependable, low-friction deployment cycles.",
-      "Expand automation coverage in GitHub Actions and Jenkins across active release streams.",
-      "Strengthen quality gates with integrated test checks and release validation standards.",
-      "Collaborate with development and QA teams to shorten cycle time while preserving production safety.",
+      "Develop and maintain automated test workflows in Jenkins for integration and release validation.",
+      "Expand CI test coverage across PPDM and ISG pipelines to reduce manual verification effort.",
+      "Stabilize pipelines by debugging flaky tests and improving execution reliability.",
+      "Partner with development and QA teams to enforce automated quality gates in releases.",
     ],
     logo: DellLogo,
-    stack: ["GitHub Actions", "Jenkins", "CI/CD", "Testing"],
+    stack: ["Jenkins", "Testing", "Automation", "CI/CD"],
     theme: {
       accentA: "#57D2FF",
       accentB: "#4E7BFF",

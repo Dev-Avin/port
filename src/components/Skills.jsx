@@ -32,6 +32,7 @@ import {
   SiRedis,
   SiTestinglibrary,
   SiTypescript,
+  SiAnsible,
 } from "react-icons/si";
 import "./skills.css";
 
@@ -42,13 +43,25 @@ const skillGroups = [
     subtitle: "Product interfaces and interaction systems",
     accent: "#f87516",
     items: [
-      { name: "HTML", icon: <FaHtml5 /> },
-      { name: "CSS", icon: <FaCss3Alt /> },
+      // { name: "HTML", icon: <FaHtml5 /> },
+      { name: "TailwindCSS", icon: <FaCss3Alt /> },
       { name: "JavaScript", icon: <FaJs /> },
       { name: "TypeScript", icon: <SiTypescript /> },
       { name: "React", icon: <FaReact /> },
       { name: "Next.js", icon: <SiNextdotjs /> },
       { name: "Framer Motion", icon: <SiFramer /> },
+    ],
+  },
+  {
+    id: "languages",
+    title: "Programming Languages",
+    subtitle: "Problem solving and core engineering",
+    accent: "#f2a15a",
+    items: [
+      { name: "C++", icon: <SiCplusplus /> },
+      { name: "C", icon: <SiC /> },
+      { name: "Java", icon: <FaJava /> },
+      { name: "Python", icon: <SiPython /> },
     ],
   },
   {
@@ -70,18 +83,6 @@ const skillGroups = [
     ],
   },
   {
-    id: "languages",
-    title: "Programming Languages",
-    subtitle: "Problem solving and core engineering",
-    accent: "#f2a15a",
-    items: [
-      { name: "C++", icon: <SiCplusplus /> },
-      { name: "C", icon: <SiC /> },
-      { name: "Java", icon: <FaJava /> },
-      { name: "Python", icon: <SiPython /> },
-    ],
-  },
-  {
     id: "devops",
     title: "DevOps & Infra",
     subtitle: "CI/CD, testing, and infrastructure operations",
@@ -92,6 +93,7 @@ const skillGroups = [
       { name: "Kubernetes", icon: <SiKubernetes /> },
       { name: "Linux", icon: <SiLinux /> },
       { name: "Jenkins", icon: <SiJenkins /> },
+      { name: "Ansible", icon: <SiAnsible /> },
       { name: "GitHub Actions", icon: <SiGithubactions /> },
       { name: "JUnit", icon: <SiJunit5 /> },
       { name: "Testing Library", icon: <SiTestinglibrary /> },
