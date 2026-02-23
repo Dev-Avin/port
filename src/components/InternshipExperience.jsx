@@ -249,10 +249,7 @@ const InternshipExperience = () => {
           <header className="internship-main-header">
             <p className="internship-eyebrow">Experience Timeline</p>
             <h2 className="internship-title">Internship Journey</h2>
-            <p className="internship-subtitle">
-              Scroll to move through each internship chapter while one sticky
-              card transitions with a layered horizontal stack effect.
-            </p>
+         
           </header>
 
           <div
