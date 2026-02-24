@@ -732,6 +732,11 @@
     justify-content: flex-start;
   }
 
+  .internship-summary{
+    display: none;
+    visibility: hidden;
+  }
+
   .internship-duration {
     white-space: normal;
   }
@@ -814,10 +819,10 @@
     flex-wrap: wrap;
   }
 
-  .internship-stack-wrap{
+  /* .internship-stack-wrap{
     visibility: hidden;
     display: none;
-  }
+  } */
   .internship-location{
     visibility: hidden;
     display: none;
