@@ -756,7 +756,10 @@
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;
-    height: 39rem;
+    height: auto;
+  }
+    .internship-active-card {
+    height: fit-content;
   }
 }
 
@@ -819,10 +822,10 @@
     flex-wrap: wrap;
   }
 
-  /* .internship-stack-wrap{
+  .internship-stack-wrap{
     visibility: hidden;
     display: none;
-  } */
+  }
   .internship-location{
     visibility: hidden;
     display: none;
