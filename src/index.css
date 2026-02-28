@@ -8,19 +8,30 @@ html {
   scroll-behavior: smooth;
   color: white;
 }
+
+html,
+body {
+  overflow-x: clip;
+  max-width: 100%;
+}
+
 .outfit {
   font-family: "Outfit", sans-serif;
 }
+
 #root {
   background: rgba(0, 0, 0, 0);
   pointer-events: none;
   z-index: 10;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: clip;
 }
+
 .adj {
   width: 80%;
 }
+
 .gradientText {
   background-image: linear-gradient(90deg, #f87516 0%, #5e11ff 100%);
   -webkit-background-clip: text;
@@ -31,6 +42,7 @@ html {
   text-align: center;
   text-fill-color: transparent;
 }
+
 .hero-skills-blend {
   position: relative;
   overflow: hidden;
@@ -49,6 +61,7 @@ html {
   position: relative;
   isolation: isolate;
 }
+
 .heroSide {
   width: 200px;
   display: flex;
@@ -63,6 +76,7 @@ html {
   position: relative;
   z-index: 1;
 }
+
 .heroMain {
   flex: 1;
   width: 60%;
@@ -73,27 +87,31 @@ html {
   position: relative;
   z-index: 1;
 }
+
 .heroMainText {
   font-size: 3.5rem;
   color: white;
   width: 70%;
   font-weight: 400;
 }
+
 .heroMainSub {
   margin-top: 30px;
   font-size: 1rem;
   color: #eee5ffbd;
   width: 70%;
 }
+
 .achievements {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   color: white;
   padding: 0 4%;
 }
+
 .achievementLine {
   margin-top: 50px;
   font-size: 1.5rem;
@@ -102,6 +120,7 @@ html {
   margin: 20px;
   text-align: center;
 }
+
 .achievementsCont {
   display: flex;
   flex-direction: row;
@@ -112,10 +131,12 @@ html {
   padding: 20px;
   /* margin-top: 50px; */
 }
+
 .achievementsImg {
   width: 100px;
   aspect-ratio: 1;
 }
+
 .contItem {
   display: flex;
   flex-direction: row;
@@ -138,6 +159,7 @@ html {
   scale: 1;
   transform: translateY(0);
 }
+
 .magic {
   display: flex;
   flex-direction: row;
@@ -148,6 +170,7 @@ html {
   color: white;
   padding: 0 4%;
 }
+
 .magicText {
   flex: 1;
   display: flex;
@@ -156,12 +179,14 @@ html {
   align-items: start;
   justify-content: start;
 }
+
 .magicHeading {
   font-size: 2.5rem;
   font-weight: 400;
   width: 80%;
   text-align: left;
 }
+
 .magicSub {
   font-size: 1rem;
   font-weight: 200;
@@ -170,6 +195,7 @@ html {
   text-align: left;
   margin-top: 20px;
 }
+
 .magicButton {
   background-image: linear-gradient(-90deg, #f87516 0%, #5e11ff 100%);
   width: 288px;
@@ -184,6 +210,7 @@ html {
   margin-top: 20px;
   transition: 0.3s;
 }
+
 .features {
   color: white;
   display: flex;
@@ -193,12 +220,14 @@ html {
   padding: 0 4%;
   margin-top: 5rem;
 }
+
 .featuresCont {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
+
 .featureHead {
   max-width: 600px;
   font-size: 2.5rem;
@@ -206,6 +235,7 @@ html {
   align-self: center;
   display: flex;
 }
+
 .featureSubHead {
   max-width: 600px;
   font-size: 1rem;
@@ -232,6 +262,7 @@ html {
   opacity: 1;
   transform: scale(1), translateY(0px);
 }
+
 .featureItem img {
   width: 188px;
   aspect-ratio: 1;
@@ -262,9 +293,11 @@ html {
   text-decoration: none;
   margin: 10px;
 }
+
 .link:hover {
   text-decoration: underline;
 }
+
 .contact-container {
   text-align: center;
   padding: 50px 20px;
@@ -313,6 +346,7 @@ html {
 .icon.email:hover {
   color: #ea4335;
 }
+
 .skills-container {
   text-align: center;
   background: rgba(0, 0, 0, 0.2);
@@ -347,6 +381,7 @@ html {
   transform: translateY(20px);
   transition: all 0.5s ease;
 }
+
 .skill-card:hover {
   scale: 1.15;
   background-color: rgba(255, 255, 255, 0.2);
@@ -368,6 +403,7 @@ html {
   font-size: 1.2rem;
   color: #ffffff;
 }
+
 @media screen and (max-width: 1024px) {
   .heroSide {
     display: none;
@@ -378,44 +414,54 @@ html {
   .adj {
     width: 100%;
   }
+
   .gradientText {
     width: 100%;
     text-align: center;
   }
+
   .header {
     height: 12vh;
   }
+
   .headerButton {
     display: none;
   }
+
   .header img {
     width: 160px;
     padding-top: 10px;
   }
+
   .headerSide {
     display: none;
   }
+
   .hero {
     flex-direction: column;
     justify-content: flex-start;
     height: max-content;
     padding: 20px 0;
   }
+
   .heroSide {
     display: none;
     height: 200px;
     width: 100%;
   }
+
   .heroMain {
     margin-top: 30px;
     text-align: center;
   }
+
   .heroMainText {
     margin-top: 30px;
     font-size: 2.3rem;
     width: 95%;
     margin-bottom: 10px;
   }
+
   .heroMainSub {
     margin-top: 10px;
     font-size: 0.9rem;
@@ -424,46 +470,58 @@ html {
     text-align: center;
     margin-bottom: 40px;
   }
+
   /* .achievementsCont{
     flex-direction: column;
   } */
   .contItem {
     font-size: 0.8rem;
   }
+
   .achievementLine {
     font-size: 1.2rem;
   }
+
   .achievementsImg {
     width: 100px;
     aspect-ratio: 1;
   }
+
   .magic {
     flex-direction: column;
   }
+
   .magicText {
     justify-content: center;
     align-items: center;
   }
+
   .magicHeading {
     font-size: 1.8rem;
     width: 100%;
   }
+
   .magicSub {
     font-size: 0.9rem;
     width: 100%;
   }
+
   .magicImg {
     margin: 20px;
   }
+
   .applicationSub {
     width: 100%;
   }
+
   .applicationText {
     font-size: 2rem;
   }
+
   .applicationContainer {
     width: 100%;
   }
+
   .moveUp {
     opacity: 1;
     transform: translateX(10px);
@@ -473,33 +531,41 @@ html {
     opacity: 1;
     transform: translateY(-10px);
   }
+
   .featureItem {
     flex: 1 1 calc(50% - 20px);
   }
+
   .footer {
     flex-direction: column-reverse;
   }
+
   .align {
     text-align: center;
   }
+
   .skills-grid {
     gap: 0px;
   }
+
   .skill-card {
     width: 160px;
   }
 }
 
 .wand-animation {
-  width: 150px; /* Adjust the size as needed */
+  width: 150px;
+  /* Adjust the size as needed */
   animation: popup 3s ease-in-out infinite;
 }
 
 @keyframes popup {
+
   0%,
   100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }

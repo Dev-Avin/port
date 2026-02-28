@@ -2,7 +2,7 @@
   position: relative;
   min-height: 265vh;
   background: #000;
-  overflow: visible;
+  overflow-x: clip;
   isolation: isolate;
   --intern-accent-a: #f87516;
   --intern-accent-b: #5e11ff;
@@ -56,9 +56,7 @@
 
   52% {
     opacity: 0.28;
-    transform: translate3d(0, -0.22rem, 0) scale(1) rotate(
-      calc(var(--particle-rotate) + 4deg)
-    );
+    transform: translate3d(0, -0.22rem, 0) scale(1) rotate(calc(var(--particle-rotate) + 4deg));
   }
 
   82% {
@@ -67,9 +65,7 @@
 
   100% {
     opacity: 0;
-    transform: translate3d(0, -0.9rem, 0) scale(0.78) rotate(
-      calc(var(--particle-rotate) + 8deg)
-    );
+    transform: translate3d(0, -0.9rem, 0) scale(0.78) rotate(calc(var(--particle-rotate) + 8deg));
   }
 }
 
@@ -135,12 +131,10 @@
   margin: 0 auto 1.25rem;
   border-radius: 1.4rem;
   border: 1px solid rgba(255, 255, 255, 0.22);
-  background: linear-gradient(
-    145deg,
-    rgba(255, 255, 255, 0.16) 0%,
-    rgba(255, 255, 255, 0.06) 42%,
-    rgba(255, 255, 255, 0.015) 100%
-  );
+  background: linear-gradient(145deg,
+      rgba(255, 255, 255, 0.16) 0%,
+      rgba(255, 255, 255, 0.06) 42%,
+      rgba(255, 255, 255, 0.015) 100%);
   backdrop-filter: blur(14px) saturate(128%);
   overflow: visible;
   box-shadow:
@@ -157,11 +151,9 @@
   inset: 0;
   border-radius: inherit;
   background:
-    repeating-linear-gradient(
-      90deg,
+    repeating-linear-gradient(90deg,
       rgba(255, 255, 255, 0.06) 0 1px,
-      transparent 1px 20px
-    ),
+      transparent 1px 20px),
     linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0));
   opacity: 0.34;
   pointer-events: none;
@@ -173,12 +165,10 @@
   top: 0.26rem;
   width: 22%;
   height: calc(100% - 0.52rem);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.12) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.12) 50%,
+      rgba(255, 255, 255, 0) 100%);
   filter: blur(1px);
   animation: internshipTimelineSweep 3.4s linear infinite;
   pointer-events: none;
@@ -191,11 +181,9 @@
   top: var(--timeline-track-top);
   height: var(--timeline-track-size);
   border-radius: 999px;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.16) 0%,
-    rgba(255, 255, 255, 0.06) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0.16) 0%,
+      rgba(255, 255, 255, 0.06) 100%);
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.08),
     0 0 12px rgba(0, 0, 0, 0.28);
@@ -208,12 +196,10 @@
   top: var(--timeline-track-top);
   height: var(--timeline-track-size);
   border-radius: 999px;
-  background: linear-gradient(
-    100deg,
-    var(--intern-accent-a) 0%,
-    var(--intern-accent-b) 44%,
-    color-mix(in srgb, var(--intern-accent-a) 35%, white) 100%
-  );
+  background: linear-gradient(100deg,
+      var(--intern-accent-a) 0%,
+      var(--intern-accent-b) 44%,
+      color-mix(in srgb, var(--intern-accent-a) 35%, white) 100%);
   box-shadow:
     0 0 22px var(--intern-glow),
     0 0 10px rgba(255, 255, 255, 0.24);
@@ -243,8 +229,7 @@
 .internship-top-point.active .internship-top-dot {
   opacity: 1;
   filter:
-    drop-shadow(0 0 20px var(--intern-glow))
-    drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+    drop-shadow(0 0 20px var(--intern-glow)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
 }
 
 .internship-top-point.current .internship-top-dot {
@@ -284,11 +269,9 @@
   padding: 0.23rem 0.54rem;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.23);
-  background: linear-gradient(
-    110deg,
-    rgba(5, 12, 24, 0.9) 0%,
-    rgba(12, 10, 24, 0.76) 100%
-  );
+  background: linear-gradient(110deg,
+      rgba(5, 12, 24, 0.9) 0%,
+      rgba(12, 10, 24, 0.76) 100%);
   backdrop-filter: blur(6px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
 }
@@ -296,11 +279,9 @@
 .internship-top-point.current .internship-top-label {
   color: #fff;
   border-color: rgba(255, 255, 255, 0.42);
-  background: linear-gradient(
-    115deg,
-    color-mix(in srgb, var(--intern-accent-a) 32%, rgba(255, 255, 255, 0.26)) 0%,
-    color-mix(in srgb, var(--intern-accent-b) 24%, rgba(255, 255, 255, 0.12)) 100%
-  );
+  background: linear-gradient(115deg,
+      color-mix(in srgb, var(--intern-accent-a) 32%, rgba(255, 255, 255, 0.26)) 0%,
+      color-mix(in srgb, var(--intern-accent-b) 24%, rgba(255, 255, 255, 0.12)) 100%);
   box-shadow: 0 0 20px color-mix(in srgb, var(--intern-glow) 88%, transparent);
 }
 
@@ -401,12 +382,10 @@
   background:
     radial-gradient(circle at 9% 0%, var(--intern-tint-a), transparent 54%),
     radial-gradient(circle at 100% 100%, var(--intern-tint-b), transparent 56%),
-    linear-gradient(
-      165deg,
+    linear-gradient(165deg,
       rgba(255, 255, 255, 0.18) 0%,
       rgba(255, 255, 255, 0.08) 34%,
-      rgba(255, 255, 255, 0.03) 100%
-    );
+      rgba(255, 255, 255, 0.03) 100%);
   backdrop-filter: blur(14px);
   box-shadow:
     0 30px 52px rgba(0, 0, 0, 0.36),
@@ -428,13 +407,11 @@
   border-radius: inherit;
   pointer-events: none;
   padding: 1px;
-  background: linear-gradient(
-    130deg,
-    rgba(255, 255, 255, 0.4) 0%,
-    rgba(255, 255, 255, 0.18) 46%,
-    rgba(255, 255, 255, 0.06) 72%,
-    transparent 100%
-  );
+  background: linear-gradient(130deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0.18) 46%,
+      rgba(255, 255, 255, 0.06) 72%,
+      transparent 100%);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
@@ -472,22 +449,18 @@
   gap: 0.72rem;
   border-radius: 0.9rem;
   border: 1px solid rgba(255, 255, 255, 0.14);
-  background: linear-gradient(
-    130deg,
-    rgba(255, 255, 255, 0.12) 0%,
-    rgba(255, 255, 255, 0.03) 100%
-  );
+  background: linear-gradient(130deg,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0.03) 100%);
   padding: 0.52rem 0.64rem;
 }
 
 .internship-year-chip {
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.35);
-  background: linear-gradient(
-    120deg,
-    var(--intern-accent-a) 0%,
-    var(--intern-accent-b) 100%
-  );
+  background: linear-gradient(120deg,
+      var(--intern-accent-a) 0%,
+      var(--intern-accent-b) 100%);
   color: #fff;
   padding: 0.3rem 0.74rem;
   font-size: 0.75rem;
@@ -530,11 +503,9 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 0.95rem;
   padding: 0.58rem 0.76rem;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.12) 0%,
-    rgba(255, 255, 255, 0.03) 100%
-  );
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0.03) 100%);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
@@ -545,12 +516,10 @@
   top: 0.5rem;
   bottom: 0.5rem;
   width: 1px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.34) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.34) 50%,
+      rgba(255, 255, 255, 0) 100%);
   transform: translateX(-50%);
 }
 
@@ -653,11 +622,9 @@
   width: 0.42rem;
   height: 0.42rem;
   border-radius: 50%;
-  background: linear-gradient(
-    135deg,
-    var(--intern-accent-a) 0%,
-    var(--intern-accent-b) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--intern-accent-a) 0%,
+      var(--intern-accent-b) 100%);
   box-shadow: 0 0 9px var(--intern-glow);
 }
 
@@ -685,11 +652,9 @@
   padding: 0.38rem 0.72rem;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.28);
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.11) 0%,
-    rgba(255, 255, 255, 0.03) 100%
-  );
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0.11) 0%,
+      rgba(255, 255, 255, 0.03) 100%);
   color: rgba(255, 255, 255, 0.93);
   font-size: 0.77rem;
 }
@@ -719,7 +684,8 @@
     height: 45rem;
     width: min(100%, 56rem);
   }
-  .internship-active-card{
+
+  .internship-active-card {
     height: 100%;
     display: flex;
     align-items: center;
@@ -732,7 +698,7 @@
     justify-content: flex-start;
   }
 
-  .internship-summary{
+  .internship-summary {
     display: none;
     visibility: hidden;
   }
@@ -752,13 +718,15 @@
   .internship-body-count {
     font-size: 0.66rem;
   }
-  .internship-card-deck{
+
+  .internship-card-deck {
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;
     height: auto;
   }
-    .internship-active-card {
+
+  .internship-active-card {
     height: fit-content;
   }
 }
@@ -769,6 +737,7 @@
     width: 100vw;
     overflow: clip;
   }
+
   /* .internship-sticky-stage {
     top: 90px;
   } */
@@ -822,21 +791,22 @@
     flex-wrap: wrap;
   }
 
-  .internship-stack-wrap{
+  .internship-stack-wrap {
     visibility: hidden;
     display: none;
   }
-  .internship-location{
+
+  .internship-location {
     visibility: hidden;
     display: none;
-    
+
   }
 
   .internship-duration {
     white-space: normal;
   }
 
-  .internship-card-top{
+  .internship-card-top {
     visibility: hidden;
     display: none;
   }

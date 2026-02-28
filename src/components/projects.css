@@ -3,8 +3,9 @@
   position: relative;
   min-height: 250vh;
   background: #000;
-
+  overflow-x: clip;
 }
+
 
 .projects-bg {
   position: absolute;
@@ -20,10 +21,10 @@
   position: sticky;
   top: 0;
   z-index: 2;
-    max-width: 100rem;
+  max-width: 100rem;
   margin: auto;
   width: 100%;
-  margin:  auto;
+  margin: auto;
   padding: 4rem 2rem;
   display: grid;
   grid-template-columns: minmax(17rem, 32rem) minmax(28rem, 1fr);
@@ -44,12 +45,10 @@
 
 /* Panel */
 .projects-panel {
-  background: linear-gradient(
-    160deg,
-    rgba(255, 255, 255, 0.12) 0%,
-    rgba(255, 255, 255, 0.04) 35%,
-    rgba(255, 255, 255, 0.02) 100%
-  );
+  background: linear-gradient(160deg,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0.04) 35%,
+      rgba(255, 255, 255, 0.02) 100%);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 1.5rem;
   backdrop-filter: blur(12px);
@@ -176,6 +175,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .display-laptop {
@@ -260,6 +260,7 @@
   .projects-container {
     min-height: 180vh;
   }
+
   /* .projects {
     top: 0;
   } */
@@ -270,7 +271,7 @@
   }
 
   .projects-showcase {
-  display: none;
+    display: none;
   }
 
   .display-laptop {
@@ -280,7 +281,7 @@
   .display-phone {
     width: min(12rem, 42%);
     transform: scale(1.12);
-    
+
   }
 
   .project-cta {
